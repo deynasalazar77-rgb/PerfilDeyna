@@ -1,0 +1,1014 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+/*==========================
+    HEADER
+==========================*/
+
+header{
+    background:#1f2937;
+    color:white;
+}
+
+.proyecto{
+    text-align:center;
+    padding:20px;
+    background:#6B1F2B;
+}
+
+.proyecto h3{
+    margin-bottom:5px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    flex-wrap:wrap;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/*ACERA DE MI*/
+.contenedor-about{
+    width:90%;
+    margin:auto;
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+.card-foto{
+    width:320px;
+    background:#EFE4D2;
+    padding:10px;
+    border-radius:20px;
+    text-align:center;
+    position:relative;
+}
+
+/* Marco vino */
+.card-foto::before{
+    content:"";
+    position:absolute;
+    top:-12px;
+    left:-12px;
+    width:100%;
+    height:100%;
+    border:4px solid #6B1F2B;
+    border-radius:20px;
+}
+
+/* Marco azul */
+.card-foto::after{
+    content:"";
+    position:absolute;
+    bottom:-12px;
+    right:-12px;
+    width:100%;
+    height:100%;
+    border:4px solid #173D7A;
+    border-radius:20px;
+}
+
+.card-foto img{
+    width:100%;
+    border-radius:15px;
+    position:relative;
+    z-index:2;
+}
+.card-texto{
+    flex:1;
+    background:#EFE4D2;
+    padding:35px;
+    border-left:8px solid #6B1F2B;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.card-texto h3{
+    color:#173D7A;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.card-texto p,
+.card-texto li{
+    font-size:18px;
+    line-height:1.7;
+}
+#acerca{
+    background:#6B1F2B;
+    padding:80px 50px;
+}
+
+
+/*==========================
+    PRESENTACIÓN
+==========================*/
+
+.presentacion{
+
+    width:100%;
+
+    min-height:90vh;
+
+    background:#EFE4D2;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 8%;
+
+    gap:60px;
+
+}
+
+/*==========================
+    TEXTO
+==========================*/
+
+.texto-presentacion{
+
+    width:55%;
+
+}
+
+.texto-presentacion h1{
+
+    font-size:75px;
+
+    color:#173D7A;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+
+}
+
+.texto-presentacion p{
+
+    font-size:23px;
+
+    color:#444;
+
+    line-height:1.7;
+
+    margin-bottom:40px;
+
+    max-width:650px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:18px 38px;
+
+    background:#6B1F2B;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:20px;
+
+    transition:.4s;
+
+}
+
+.btn:hover{
+
+    background:#173D7A;
+
+}
+
+/*==========================
+    FOTO
+==========================*/
+
+.contenedor-foto{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.marco-foto{
+
+    width:360px;
+
+    height:450px;
+
+    position:relative;
+
+}
+
+/* Marco vino */
+
+.marco-foto::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border:4px solid #6B1F2B;
+
+    top:-18px;
+
+    left:-18px;
+
+}
+
+/* Marco azul */
+
+.marco-foto::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border:4px solid #173D7A;
+
+    bottom:-18px;
+
+    right:-18px;
+
+}
+
+.marco-foto img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    position:relative;
+
+    z-index:2;
+
+    border-radius:8px;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+
+}
+
+/*==========================
+    SECCIONES
+==========================*/
+
+section{
+    padding:50px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1f2937;
+}
+
+/*==========================
+    ABOUT ME
+==========================*/
+#acerca{
+    width:100%;
+    background:#6B1F2B;
+    padding:80px 50px;   /* espacio interno */
+    margin:0;            /* sin margen */
+}
+
+#acerca h2{
+
+    text-align:center;
+    font-size:40px;
+    color:#173D7A;
+    margin-bottom:40px;
+
+}
+
+.card-about{
+
+    background:rgba(255,255,255,.95);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.20);
+
+}
+
+/*==========================
+    PROYECTOS
+==========================*/
+#proyectos{
+margin: 0;
+width: 100%;
+  background:#EFE4D2;
+    padding:80px 50px;
+
+}
+
+.card-proyectos{
+
+    width:90%;
+
+    margin:auto;
+
+    padding:50px;
+
+ background:url("../imagenes/fondo.png");
+
+    border:3px solid #7B1E3A;
+
+    border-radius:25px;
+
+    box-shadow:0px 12px 30px rgba(0,0,0,.20);
+
+}
+
+.card-proyectos h2{
+ border-radius: 10px;
+    text-align:center;
+    background-color: #6B1F2B;
+    font-size:55px;
+    color:#fbfcfe;
+
+    margin-bottom:50px;
+
+}
+
+.contenedor-card{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    width:280px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0px 8px 18px rgba(0,0,0,.20);
+
+    transition:0.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+    box-shadow:0px 15px 30px rgba(0,0,0,.30);
+
+}
+
+.card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.card figcaption{
+
+    background:#7B1E3A;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:18px;
+
+}
+/*==========================
+    HABILIDADES
+==========================*/
+#habilidades{
+    width: 100%;
+    padding: 80px 50px;
+    background-color: #6B1F2B;
+}
+
+
+#habilidades h2{
+    text-align:center;
+    color:#f5f0f1;
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.contenedor-habilidades{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card-habilidad{
+    width:260px;
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card-habilidad:hover{
+    transform:translateY(-8px);
+}
+
+.card-habilidad img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.btn-ver{
+    background:#231148;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.btn-ver:hover{
+    background:#face1f;
+}
+
+.info{
+    display:none;
+    margin-top:20px;
+    text-align:left;
+}
+
+.info h3{
+    color:#173D7A;
+    margin-bottom:10px;
+}
+
+.card-habilidad.activa .info{
+    display:block;
+}
+
+
+/*==========================
+    GUSTOS
+==========================*/
+
+
+#gustos{
+
+    padding:80px 50px;
+    background:#EFE4D2;
+
+}
+
+#gustos h2{
+
+    text-align:center;
+    color:#6B1F2B;
+    font-size:45px;
+    margin-bottom:60px;
+
+}
+
+.contenedor-gustos{
+
+    display:flex;
+    justify-content:center;
+    gap:45px;
+    flex-wrap:wrap;
+
+}
+
+.artista{
+
+    text-align:center;
+    transition:.4s;
+
+}
+
+.artista:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.artista img{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+
+    border:6px solid #6B1F2B;
+    outline:6px solid #173D7A;
+    outline-offset:8px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+}
+
+.artista h3{
+
+    margin-top:20px;
+    color:#173D7A;
+    font-size:22px;
+
+}
+
+#info-artista{
+
+    width:70%;
+    margin:50px auto;
+
+    background:#ffffff;
+
+    border:4px solid #173D7A;
+    border-left:10px solid #6B1F2B;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.20);
+
+}
+
+#titulo{
+
+    color:#6B1F2B;
+    font-size:35px;
+    margin-bottom:15px;
+
+}
+
+#texto{
+
+    color:#444;
+    font-size:20px;
+    line-height:1.8;
+
+}
+
+/*==========================
+    TABLA
+==========================*/
+#tablas{
+    width: 100%;
+    padding: 80px 50px;
+    background-color: #6B1F2B;
+}
+#tablas h2{
+    color: #ccc;
+    text-transform: uppercase;
+}
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+
+}
+
+table,
+th,
+td{
+
+    border:1px solid #ccc;
+
+}
+
+th{
+
+    background:#1f2937;
+    color:white;
+
+}
+
+th,
+td{
+
+    padding:15px;
+    text-align:center;
+
+}
+
+/*==========================
+    ASIDE
+==========================*/
+
+aside{
+
+    background:#dbeafe;
+    padding:35px;
+    margin:40px;
+    border-left:8px solid #2563eb;
+    border-radius:10px;
+
+}
+
+blockquote{
+
+    font-style:italic;
+
+}
+
+/*==========================
+    FORMULARIO
+==========================*/
+#contacto{
+    width: 100%;
+    padding: 80px 50px;
+    background-color: #6B1F2B;
+}
+form{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+input,
+textarea{
+
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+
+}
+
+form button{
+
+    width:180px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+
+}
+
+form button:hover{
+
+    background:#1d4ed8;
+
+}
+
+#respuesta{
+
+    margin-top:20px;
+    font-weight:bold;
+    text-align:center;
+
+}
+
+/*==========================
+    FOOTER
+==========================*/
+
+footer{
+
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+
+}
+
+/*==========================
+    RESPONSIVE
+==========================*/
+
+
+@media(max-width:768px){
+
+
+    /* HEADER */
+
+    nav{
+
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+
+    }
+
+
+    nav ul{
+
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+
+    }
+
+
+
+    /* PRESENTACIÓN */
+
+    .presentacion{
+
+        flex-direction:column;
+        text-align:center;
+        padding:50px 20px;
+
+    }
+
+
+    .texto-presentacion{
+
+        width:100%;
+
+    }
+
+
+    .texto-presentacion h1{
+
+        font-size:45px;
+
+    }
+
+
+    .texto-presentacion p{
+
+        font-size:18px;
+
+    }
+
+
+    .contenedor-foto{
+
+        width:100%;
+
+    }
+
+
+    .marco-foto{
+
+        width:260px;
+        height:330px;
+
+    }
+
+
+
+    /* ABOUT */
+
+    .card-about{
+
+        flex-direction:column;
+        padding:25px;
+        width:100%;
+
+    }
+
+
+    .card-foto{
+
+        width:250px;
+
+    }
+
+
+    .card-texto{
+
+        width:100%;
+        text-align:center;
+
+    }
+
+
+
+    /* HABILIDADES */
+
+    .contenedor-habilidades{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+    .card-habilidad{
+
+        width:90%;
+
+    }
+
+
+
+    /* GUSTOS ARTISTAS */
+
+    .contenedor-gustos{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+    .artista img{
+
+        width:160px;
+        height:160px;
+
+    }
+
+
+    #info-artista{
+
+        width:90%;
+        padding:20px;
+
+    }
+
+
+    #titulo{
+
+        font-size:25px;
+
+    }
+
+
+    #texto{
+
+        font-size:16px;
+
+    }
+
+
+
+    /* PROYECTOS */
+
+    .card-proyectos{
+
+        width:95%;
+        padding:25px;
+
+    }
+
+
+    .card-proyectos h2{
+
+        font-size:35px;
+
+    }
+
+
+    .contenedor-card{
+
+        flex-direction:column;
+
+    }
+
+
+    .card{
+
+        width:90%;
+
+    }
+
+
+
+    /* TABLA */
+
+    table{
+
+        font-size:14px;
+
+        overflow-x:auto;
+
+        display:block;
+
+    }
+
+
+    th,
+    td{
+
+        padding:10px;
+
+    }
+
+
+
+    /* ASIDE */
+
+    aside{
+
+        margin:20px;
+        padding:20px;
+
+    }
+
+
+
+    /* FORMULARIO */
+
+    form{
+
+        padding:20px;
+
+    }
+
+
+    form button{
+
+        width:100%;
+
+    }
+
+
+
+    /* FOOTER */
+
+    footer{
+
+        font-size:14px;
+
+    }
+
+}

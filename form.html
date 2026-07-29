@@ -1,26 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oteo</title>
-    <link rel="stylesheet" href="css/dos.css">
-    <script src="js/script.js" defer></script>
+    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" href="css/root.css">
+      <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/form.js" defer></script>
 </head>
 <body>
-    <form id="formulario">
-<label for="Ingresa la materia"></label>
-    <input type="text" id="materia" placeholder="Materia">
-<label for="Ingresa el curos"></label>
-    <input type="text" id="curso" placeholder="Curso">
-<label for="Ingresa el estado"></label>
-    <input type="text" id="estado" placeholder="Estado">
+    <section class="section-form">
+        <h2>Registro de Usuarios</h2>
 
-    <button type="submit">
-        Agregar
-    </button>
+        <form class="formulario-usuario" id="formUsuario">
+            <div class="form-data">
+                <label for="nombre">Nombre</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre"
+                    required
+                    >
+            </div>
+            <div class="form-data">
+                <label for="apellido">Apellido</label>
+                <input 
+                    type="text" 
+                    id="apellido" 
+                    name="apellido"
+                    required
+                    >
+            </div>
+             <div class="form-data">
+                <label for="correo">Correo</label>
+                <input 
+                    type="email" 
+                    id="correo" 
+                    name="correo"
+                    required
+                    >
+            </div>
+            <div class="form-data">
+                <label for="telefono">Telefono</label>
+                <input 
+                    type="text" 
+                    id="telefono" 
+                    name="telefono"
+                    required
+                    >
+            </div>
+            <div class="form-data">
+                <label for="telefono">Edad</label>
+                <input 
+                    type="number" 
+                    id="edad" 
+                    name="edad"
+                    required
+                    >
+            </div>
+            <div class="form-data">
+                <label for="genero">Genero</label>
+                <select name="genero" id="genero">
+                    <option value="">Seleccione .....</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+            <div class="form-data">
+                <label for="direccion">Dirección</label>
+                <textarea 
+                    id="direccion" 
+                    name="direccion" 
+                    rows="3">
+                    </textarea>
+            </div>
 
-</form>
+            <div class="form-actions">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+    </section>
 
+    <section class="section-usuarios">
+        <table border="1" width="100%" id="tablaUsuarios" id="tablas">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Edad</th>
+                    <th>Género</th>
+                    <th>Dirección</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            
+            <tbody id="tbodyUsuarios">
+
+            </tbody>
+        </table>
+
+    </section>
 </body>
 </html>

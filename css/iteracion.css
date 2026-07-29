@@ -1,0 +1,123 @@
+
+.btn{
+    transition: .4s;
+}
+
+.card{
+    transition: .4s;
+}
+
+.card-habilidad{
+    transition: .3s;
+}
+
+.artista{
+    transition: .4s;
+}
+
+nav a:hover{
+    color: var(--color-acento-cian);
+}
+
+.btn:hover{
+    background: var(--color-azul);
+}
+
+.card:hover{
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: var(--sombra-fuerte);
+}
+
+.card-habilidad:hover{
+    transform: translateY(-8px);
+}
+
+.btn-ver:hover{
+    background: var(--color-acento-amarillo);
+}
+
+.artista:hover{
+    transform: translateY(-10px);
+}
+
+form button:hover{
+    background: var(--color-azul-btn-hover);
+}
+
+.card-habilidad.activa .info{
+    display: block;
+}
+
+
+.section-usuarios{
+    width:90%;
+    margin:40px auto;
+}
+
+#tablaUsuarios{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--color-blanco);
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:var(--sombra-media);
+}
+
+#tablaUsuarios thead{
+    background:var(--color-vino);
+}
+
+#tablaUsuarios th{
+    padding:16px;
+    color:var(--color-blanco);
+    font-size:16px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+#tablaUsuarios td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid var(--color-borde-claro);
+    color:var(--color-texto-muted);
+}
+
+#tablaUsuarios tbody tr:nth-child(even){
+    background:var(--color-crema);
+}
+
+#tablaUsuarios tbody tr:hover{
+    background:#f7dfe5;
+    transition:.3s;
+}
+
+
+
+#tablaUsuarios button{
+    border:none;
+    padding:8px 15px;
+    border-radius:8px;
+    color:var(--color-blanco);
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+    margin:2px;
+}
+
+
+#tablaUsuarios button:first-child{
+    background:var(--color-azul);
+}
+
+#tablaUsuarios button:first-child:hover{
+    background:var(--color-header);
+}
+
+
+#tablaUsuarios button:last-child{
+    background:var(--color-vino);
+}
+
+#tablaUsuarios button:last-child:hover{
+    background:var(--color-vino-oscuro);
+}
